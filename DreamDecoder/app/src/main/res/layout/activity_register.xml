@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/account_bg"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/registerEmailEditText"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"        android:layout_marginBottom="12dp"
+        android:textColor="#bf6fcb"
+        android:textColorHint="#bf6fcb"
+        android:background="@drawable/account_edittextview_bg"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/registerPasswordEditText"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="12dp"
+        android:layout_height="60dp"
+        android:textColor="#bf6fcb"
+        android:textColorHint="#bf6fcb"
+        android:background="@drawable/account_edittextview_bg"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/confirmPasswordEditText"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="60dp"
+        android:textColor="#bf6fcb"
+        android:textColorHint="#bf6fcb"
+        android:background="@drawable/account_edittextview_bg"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"/>
+
+    <ImageButton
+        android:id="@+id/registerButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/register_button" />
+
+    <TextView
+        android:id="@+id/loginRedirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login"
+        android:textColor="@color/primary"
+        android:textSize="14sp"
+        android:fontFamily="@font/baloo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+
+</LinearLayout>

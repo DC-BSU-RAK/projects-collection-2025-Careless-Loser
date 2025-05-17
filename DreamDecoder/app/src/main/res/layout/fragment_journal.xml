@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Scrollable journal content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/journal_background"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp">
+
+            <EditText
+                android:id="@+id/dreamInput"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:background="@drawable/text_bg"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:hint="Write your dream..."
+                android:minHeight="70dp"
+                android:padding="12dp"
+                android:textColor="#bf6fcb"
+                android:textColorHint="#bf6fcb" />
+
+            <ImageButton
+                android:id="@+id/saveDreamButton"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="12dp"
+                android:background="@null"
+                android:contentDescription="Save Dream"
+                android:scaleType="fitCenter"
+                android:src="@drawable/savedream_button" />
+
+            <LinearLayout
+                android:id="@+id/dreamListLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Instruction ImageButton floating top-right -->
+    <ImageButton
+        android:id="@+id/btn_instructions"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="16dp"
+        android:background="@null"
+        android:contentDescription="Instructions"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_instructions_button" />
+</FrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CalendarDateText" >
+        <item name="android:textColor">#bf6fcb</item>
+        <item name="android:fontFamily">@font/baloo</item>
+    </style>
+
+    <style name="CalendarWeekText">
+        <item name="android:textColor">#bf6fcb</item>
+        <item name="android:fontFamily">@font/baloo</item>
+    </style>
+
+    <style name="CalendarDayText" >
+        <item name="android:textColor">#bf6fcb</item>
+        <item name="android:fontFamily">@font/baloo</item>
+    </style>
+
+
+</resources>

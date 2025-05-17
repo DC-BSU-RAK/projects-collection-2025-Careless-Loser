@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/calendar_bg">
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="320dp"
+        android:layout_height="310dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/calendarview_bg"
+        android:gravity="center"
+        android:weekDayTextAppearance="@style/CalendarWeekText"
+        android:dateTextAppearance="@style/CalendarDateText"
+        android:selectedDateVerticalBar="@style/CalendarDayText" />
+
+    <TextView
+        android:id="@+id/dreamTextView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/date_button"
+        android:fontFamily="@font/baloo"
+        android:paddingTop="25dp"
+        android:layout_marginTop="8dp"
+        android:text="Select a date to see your dream"
+        android:textAlignment="center"
+        android:textColor="#bf6fcb"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/editButton"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_button" />
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/delete_button"/>
+    </LinearLayout>
+
+
+</LinearLayout>
